@@ -1,0 +1,78 @@
+.TH "/home/thierry/Sources/Opengl/Lesson03/src/logger.c" 3 "Thu Mar 23 2023" "Version 2.1.0" "Lesson03 (from NeHe)" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+/home/thierry/Sources/Opengl/Lesson03/src/logger.c \- Ajout de fonction de 'logging' (traces dans un fichier texte log\&.txt) uniquement en mode Debug et avec des niveaux de tracing définis dans une variable d'environnement (LEVEL)  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdarg\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'logger\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char * \fBprint_time\fP ()"
+.br
+.ti -1c
+.RI "void \fBlog_print\fP (char *filename, int line, char *fmt,\&.\&.\&.)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "FILE * \fBft\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Ajout de fonction de 'logging' (traces dans un fichier texte log\&.txt) uniquement en mode Debug et avec des niveaux de tracing définis dans une variable d'environnement (LEVEL) 
+
+Comments manageable by Doxygen
+.PP
+Modified by Thierry DECHAIZE
+.PP
+Date : 2023/03/05
+.PP
+\fBAuthor\fP
+.RS 4
+Thierry Dechaize 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+2\&.0\&.1\&.0 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+5 mars 2023
+.RE
+.PP
+L'utilisation est très simple : #if define(DEBUG) then if LEVEL=FULL or LEVEl= BASE \&.\&.\&. or LEVEL=OPENGL log_print(nom_du_source, ligne dans ce source, texte approprié) 
+.SH "Function Documentation"
+.PP 
+.SS "void log_print (char * filename, int line, char * fmt,  \&.\&.\&.)"
+
+.SS "char* print_time ()"
+
+.SH "Variable Documentation"
+.PP 
+.SS "FILE* ft"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Lesson03 (from NeHe) from the source code\&.
